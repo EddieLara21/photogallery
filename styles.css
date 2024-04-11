@@ -4,6 +4,7 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
+    justify-content: center;
 }
 
 main {
@@ -32,13 +33,11 @@ figcaption, label, input, small {
     font-size: 1em;
 }
 
-nav {
-    width: 485px;
-    position: relative;
-    color: white;
-}
 nav li {
-    display: inline;
+    margin: 0 auto; 
+    padding: 0 12px;
+    display: inline-block;
+    text-align: center;
 }
 
 nav a {
@@ -47,7 +46,6 @@ nav a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    text-align: center;
 }
 
 nav a:hover {
@@ -73,20 +71,35 @@ nav a:hover {
     grid-column: 1/-1;
 }
 
+figure {
+    position: relative;
+}
+
+img {
+    display: block;
+}
+
 .top {
-    
+    text-align: center;
+    background-color: red;
+    position: absolute;
 }
 
 .bottom {
+    text-align: center;
+    background-color: grey;
 
 }
 
 .black {
     color: black;
+    font-weight: bold;
+    text-transform: uppercase;  
 }
 
 .white {
     color:white;
+    text-transform: uppercase;    
 }
 
 /* photo gallery fig caption section  */
@@ -132,7 +145,7 @@ input {
 }
 
 .submit {
-    margin: 0 auto;
+    margin: 25px auto;
     background-color: #007d7b;
     font-size: 1.25em;
     font-weight: 100;
@@ -152,6 +165,8 @@ footer {
 }
 
 /* footer */
+
+/* media queries */
 
 @media screen and (min-width: 880px) {
     body {
@@ -178,3 +193,5 @@ footer {
     }
     
 }
+
+/* media queries */
