@@ -33,16 +33,20 @@ figcaption, label, input, small {
     font-size: 1em;
 }
 
+/* Nav Section */
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 nav li {
-    margin: 0 auto; 
     padding: 0 12px;
     display: inline-block;
-    text-align: center;
 }
 
 nav a {
     font-size: 1.5em;
-    padding: 10px;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -59,6 +63,7 @@ nav a:hover {
     border: solid;
     border-color: white;
 }
+/* Nav Section */
 
 /* photo gallery fig caption section  */
 
@@ -72,34 +77,37 @@ nav a:hover {
 }
 
 figure {
+    display: flex;
     position: relative;
+    justify-content: center;
 }
 
-img {
-    display: block;
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .top {
-    text-align: center;
     background-color: red;
     position: absolute;
+    top: 20px;
 }
 
 .bottom {
-    text-align: center;
-    background-color: grey;
 
+    background-color: grey;
+    position: absolute;
+    bottom: 10px;
 }
 
 .black {
     color: black;
-    font-weight: bold;
-    text-transform: uppercase;  
+    
 }
 
 .white {
-    color:white;
-    text-transform: uppercase;    
+    color:white;  
 }
 
 /* photo gallery fig caption section  */
@@ -116,6 +124,7 @@ img {
 }
 
 form {
+    display: block;
     width: 450px;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -136,6 +145,7 @@ label {
 
 input {
     height: 30px;
+    width: 100%;
 }
 
 ::placeholder {
@@ -153,6 +163,9 @@ input {
     text-align: center;
     border-radius: 50px;
     padding: 5px 60px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
 }
 /* contact section */
 
@@ -184,6 +197,10 @@ footer {
 @media screen and (min-width: 1300px) {
     body {
         width: 1300px;
+    }
+    nav {
+        display: flex;
+        justify-content: right;
     }
     #gallery {
         grid-template-columns: 1fr 1fr 1fr;
