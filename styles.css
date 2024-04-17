@@ -27,6 +27,7 @@ h2 {
 
 p {
     font-size: 1.25em;
+    padding: 020px;
 }
 
 figcaption, label, input, small {
@@ -184,7 +185,6 @@ footer {
     }
     #gallery {
         grid-template-columns: 1fr 1fr;
-        width: auto;
     }
     #gallery h2, #gallery p  {
         grid-column: 1/-1;
